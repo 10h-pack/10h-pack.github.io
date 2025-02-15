@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复制代码示例</title>
+    <style>
+        .button {
+            background-color: #4CAF50; /* 按钮背景颜色 */
+            color: white; /* 文字颜色 */
+            padding: 10px 20px; /* 内边距 */
+            border: none; /* 无边框 */
+            border-radius: 5px; /* 圆角 */
+            cursor: pointer; /* 鼠标指针样式 */
+            font-size: 16px; /* 字体大小 */
+        }
+    </style>
+</head>
+<body>
+    <h1>复制代码示例</h1>
+    <textarea id="code" rows="10" cols="50" readonly>
+loadstring(game:HttpGet("https://raw.githubusercontent.com/10h-pack/new-UI.345/refs/heads/main/blacksmith.lua"))()
+    </textarea>
+    <br><br>
+    <button class="button" onclick="copyCode()">复制代码</button>
+
+    <script>
+        function copyCode() {
+            const codeArea = document.getElementById("code");
+            codeArea.select();
+            codeArea.setSelectionRange(0, 99999); // 适用于移动设备
+            navigator.clipboard.writeText(codeArea.value).then(() => {
+                alert("代码已复制到剪贴板！");
+            }).catch(err => {
+                console.error("复制失败: ", err);
+            });
+        }
+    </script>
+</body>
+</html>
