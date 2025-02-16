@@ -1,14 +1,14 @@
 ---
 title: "你在看什么"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+type: "6"
+permalink: 666
+venue: "idk"
+date: 2222-1-6
+location: "HeBei, China"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+你在看啥
 
 Heading 1
 ======
