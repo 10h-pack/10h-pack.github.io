@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "6脚本获取"
+title: "关于 6 Script"
 author_profile: true
 redirect_from: 
   - /about/
